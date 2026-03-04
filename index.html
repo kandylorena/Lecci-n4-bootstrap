@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Lección4-bootstrap</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Frontend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conocenos.html">Conocenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-info bg-opacity-25 text-center">
+        <div class="container ">
+            <header> <!-- para cabecera de la pagina -->
+
+                <h1 class="text-danger fw-bold display-5 mb-3">
+                    Qué es Frontend?
+                </h1>
+                <p class="lead text-muted mx-auto" style="max-width: 700px;"">
+                        En el mundo de la programación existen dos términos muy comunes e importantes: frontend y
+                        backend. Estos se utilizan cuando se quiere hablar de funcionalidad y usabilidad de un sitio web o aplicación,
+                        pero ¿qué es cada uno y para qué sirve?
+
+                        En primer lugar es importante diferenciarlos de acuerdo a su función: el frontend se ocupa de
+                        los usuarios y el backend de los procesos. Si lo explicamos de una manera más coloquial, podemos poner como
+                        ejemplo un restaurante: el frontend es la decoración y los platillos, mientras que el backend es la cocina,
+                        la administración y el personal que ahí labora. Si tienes más interés en conocer a qué se refieren los conceptos de frontend y backend, en este
+                        artículo te
+                        brindamos más detalles acerca de ambos.<!--se usa para parrafos de texto-->
+                    </p>
+
+                    <img src=" assets/img/frontendbackend.webp" class="img-fluid mx-auto d-block mb-4"
+                    alt="Imagen destacada" width="400" height="300">
+                    <button type="button" class="btn btn-primary mb-3" id="liveAlertBtn">Bienvenid@</button>
+                    <div id="liveAlertPlaceholder"></div>
+            </header>
+            <section><!--agrupa contenido relacionado-->
+                <article>
+                    <h2>Qué es el frontend y para qué sirve</h2>
+                    <!-- para agregar  parrafos -->
+                    <p>
+
+                        El frontend o «desarrollo del lado del cliente» se refiere a la práctica de producir HTML, CSS y
+                        JavaScript. Estos tres elementos se encargan de dar forma a la parte frontal de un sitio web o
+                        aplicación. Esto incluye los fondos, colores, texto, animaciones o efectos.
+                        Precisamente de ahí proviene el nombre de «desarrollo del lado del cliente», pues con el
+                        frontend se
+                        puede construir por completo lo que los usuarios perciben al explorar un sitio y con el que
+                        pueden
+                        interactuar.
+                    </p>
+                </article>
+            </section>
+
+            <aside><!-- <aside> se usa para contenido complementario -->
+                <h3>Para qué sirve el frontend</h3>
+
+                <p>
+                    El frontend sirve para realizar la interfaz de un sitio web, desde su estructura hasta los estilos,
+                    como pueden ser la definición de los colores, texturas, tipografías, secciones, entre otros. Su uso es
+                    determinante para que el usuario tenga una buena experiencia dentro del sitio o aplicación.
+                </p>
+                <h3>Elementos del frontend</h3>
+                <ul>
+                    <li>
+                        <h3>Estructuras de navegación</h3>
+                        <p>Este elemento se refiere al orden en que se organizan las diferentes páginas de un sitio web
+                            y a los componentes que se vinculan entre sí para realizar diferentes funciones dentro del sitio.
+                            Layout. También nombrado como diseño de página, se refiere a todos los componentes de la
+                            página web, por ejemplo: ubicación del menú, botones, footer; todo lo necesario para que un sitio sea
+                            útil y fácil de navegar. </p>
+                    </li>
+
+                    <li>
+                        <h3>Contenido web</h3>
+                        <p>Todo aquello que brinde información relevante o interesante para los usuarios. Es importante
+                            destacar que el contenido no tiene que ser necesariamente texto, puede incluir sonido o materiales
+                            interactivos. </p>
+                    </li>
+
+                    <li>
+                        <h3>Imágenes</h3>
+                        <p>Todos los recursos visuales ayudan a aumentar el interés de los usuarios. Esto también puede
+                            incluir videos, animaciones, mapas, gráficas, infografías, GIFs, ilustraciones, diagramas, etc. </p>
+                    </li>
+                    <li>
+                        <h3>Logotipo</h3>
+                        <p>Para que un sitio web tenga mayor identidad es vital que contenga el logotipo que represente
+                            a la marca o empresa.</p>
+                    </li>
+                    <li>
+                        <h3>Diseño gráfico</h3>
+                        <p>Este elemento engloba todo lo relacionado con cómo se ve el sitio web y su apariencia:
+                            colores, formas, tipografías, tamaños, etc.</p>
+                    </li>
+                </ul>
+                <h3>Tecnologías y herramientas principales del frontend</h3>
+                <p>El frontend se compone de diversas tecnologías y herramientas esenciales para construir interfaces de
+                    usuario
+                    interactivas y atractivas. Aquí te detallo algunas de las principales:</p>
+                <ul>
+                    <li>
+                        <h3>HTML (HyperText Markup Language)</h3>
+                        <p>Función: es el lenguaje de marcado estándar para estructurar contenido en la web. Define la
+                            estructura de la página, como encabezados, párrafos, imágenes, formularios, tablas, etc.
+
+                            Ejemplo de uso: crear la estructura básica de una página, como cabeceras, secciones de
+                            contenido
+                            y
+                            pie de página.</p>
+                    </li>
+                    <li>
+                        <h3>CSS (Cascading Style Sheets)</h3>
+                        <p>Es el lenguaje de estilo utilizado para definir la presentación visual de un documento HTML.
+                            Permite controlar el diseño, el color, el tamaño de las fuentes, las posiciones y más.
+                            Ejemplo de uso: aplicar estilos visuales a una página, como colores, fuentes, márgenes,
+                            espaciados y
+                            layouts.</p>
+                    </li>
+                    <li>
+                        <h3>JavaScript</h3>
+                        <p>Es el lenguaje de programación principal para hacer que las páginas web sean interactivas.
+                            Permite
+                            manipular el DOM (Document Object Model), manejar eventos y realizar llamadas a APIs.
+                            Ejemplo de uso: validación de formularios, efectos de animación, interactividad dinámica en
+                            una página sin recargarla (AJAX).
+                        </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Control de versiones Git</h3>
+                        <p>Sistema de control de versiones distribuido. Permite a los desarrolladores colaborar,
+                            gestionar y
+                            hacer seguimiento de los cambios realizados en el código fuente.</p>
+                    </li>
+                    <li>
+                        <h3>Herramientas populares:</h3>
+                        <p>GitHub: Plataforma de hosting para proyectos Git.</p>
+                        <p>GitLab: Plataforma similar a GitHub pero con enfoque en DevOps y CI/CD.</p>
+                        <p>Bitbucket: Plataforma similar, muy utilizada en entornos corporativos.</p>
+                    </li>
+                </ul>
+                <p>informacion suministrada de: https://blog.hubspot.es/website/frontend-y-backend</p>
+            </aside>
+        </div>
+    </section>
+    <footer class="bg-dark text-white text-center py-3 mt-auto"><!-- <footer> se usa para el pie de página -->
+        <div class="container">
+            <p class="fo">© 2026 Mi Página Sencilla. Todos los derechos
+                reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+        const alertTrigger = document.getElementById('liveAlertBtn');
+
+        function showAlert(message, type, duration = 5000) {
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = `
+      <div class="alert alert-${type} alert-dismissible fade show" role="alert">
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+            alertPlaceholder.append(wrapper);
+
+            // Desaparece sola después de "duration" ms
+            setTimeout(() => {
+                const alertDiv = wrapper.querySelector('.alert');
+                if (alertDiv) {
+                    // Usamos Bootstrap 5 para cerrar la alerta
+                    const bsAlert = bootstrap.Alert.getOrCreateInstance(alertDiv);
+                    bsAlert.close();
+                }
+            }, duration);
+        }
+
+        alertTrigger.addEventListener('click', () => {
+            showAlert('¡Bienvenido! Tu sitio está listo para explorar.', 'success', 2000);
+        });
+    </script>
+</body>
+
+</html
